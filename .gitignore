@@ -1,3 +1,4 @@
 .idea
 crowd_level.csv
-crowd_level.pdf
+crowd_level.svg
+dropbox_uploader.sh

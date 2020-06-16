@@ -67,7 +67,7 @@ def plotData(file_path, plot_path):
 # -------------------- MAIN -----------------------------------------------
 def main():
     file_path = 'crowd_level.csv'
-    plot_path = 'crowd_level.pdf'
+    plot_path = 'crowd_level.svg'
 
     crowd_level = scrapeBWCrowdLevel()
     saveToFile(file_path, crowd_level)

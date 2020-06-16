@@ -9,8 +9,8 @@ verify_ssl = true
 beautifulsoup4 = "*"
 requests = "*"
 numpy = "*"
-pandas = "*"
 matplotlib = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.7"
