@@ -47,13 +47,13 @@ def plotData(file_path, plot_path):
     data['dates'] = dts.date2num(data['time'])
 
     fig, ax = plt.subplots()
-    ax.plot_date(data['dates'], data['crowd_level'], linestyle='-', marker='x', mec='r', mfc='r')
+    l, = ax.plot_date(data['dates'], data['crowd_level'], linestyle='-', marker='x', ms=3, mec=(1,0,0,0.5), mfc=(1,0,0,0.5))
     ax.grid(True)
     ax.grid(color='b', ls='-.', lw=0.25)
     ax.set_ylim([-.01,1.01])
 
 
-    hours = dts.HourLocator(interval = 1)
+    hours = dts.HourLocator(interval = 3)
     ax.xaxis.set_major_locator(hours)
     ax.xaxis.set_major_formatter(dts.DateFormatter('%Y-%m-%d %H:%M'))
     plt.xticks(rotation=90)
