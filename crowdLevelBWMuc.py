@@ -53,7 +53,7 @@ def plotData(file_path, plot_path):
     ax.set_ylim([-.01,1.01])
 
 
-    hours = dts.HourLocator(interval = 3)
+    hours = dts.HourLocator(interval = 6)
     ax.xaxis.set_major_locator(hours)
     ax.xaxis.set_major_formatter(dts.DateFormatter('%Y-%m-%d %H:%M'))
     plt.xticks(rotation=90)
